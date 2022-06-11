@@ -190,26 +190,6 @@ levels(data$region)<- c("alaska", "alabama","arkansas", "arizona", "california",
                         "wisconsin","west virginia","wyoming")
 # ----------------------------------
 
-############ Loan Counts per State
-us_states <- map_data("state")
-counter <- merge(us_states, table43, by="region")
-
-ggplot(counter, aes(x=long, y=lat, map_id = region)) + 
-  geom_map(aes(fill= count), map = us_states)+
-  scale_fill_gradientn("",colours=terrain.colors(10),guide = "legend")+
-  theme_bw() +
-  labs(title="Loan Counts per State",x="",y="") +
-  theme(axis.text.x=element_blank(),axis.ticks.x=element_blank(),
-        axis.text.y=element_blank(),axis.ticks.y=element_blank(),
-        legend.title.align=0.5,
-        legend.background = element_rect(fill="white", color = "grey88",size=0.5, linetype="solid"),
-        legend.box = "vertical", legend.position = c(0.935, 0.215),
-        panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-        panel.border = element_blank()) +
-  guides(fill=guide_legend(title="Loan Counts")) 
-
-
-
 ############ Loan Volume per State
 volume_data <- select(data, region)
 volume_data <-  volume_data %>% filter(region != "NA") %>% na.omit() %>% 
