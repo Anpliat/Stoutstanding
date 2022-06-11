@@ -29,5 +29,4 @@
    * Total Customers Current & Previous Year
    * New Customers
    * Lost Customers
-
 * Visualizations
