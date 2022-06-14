@@ -10,7 +10,7 @@
     * Contingency Tables
     * Other Visualizations
 * Methodology
-    * Linear Probability model
+    * Linear Regression
     * Regression Tree
 * Test results visualization
 
