@@ -1,7 +1,7 @@
 # Loans_Orders
 
 
-## Case Study 1
+## Case Study 1 (Loans)
 
 ### Contents
 * Dataset Description
@@ -15,7 +15,7 @@
 * Test results visualization
 
 
-## Case Study 2
+## Case Study 2 (Customer Orders)
 
 ### Contents
 
